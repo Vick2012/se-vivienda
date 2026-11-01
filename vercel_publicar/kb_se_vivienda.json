@@ -1,0 +1,1979 @@
+{
+ "categorias": [
+  {
+   "codigo": "ELE",
+   "nombre": "Eléctrica",
+   "descripcion": "Fallas en la instalación eléctrica de la vivienda"
+  },
+  {
+   "codigo": "HID",
+   "nombre": "Hidráulica",
+   "descripcion": "Fugas, obstrucciones y fallas en el agua y el desagüe"
+  },
+  {
+   "codigo": "EST",
+   "nombre": "Estructural",
+   "descripcion": "Grietas, asentamientos e integridad estructural"
+  },
+  {
+   "codigo": "HUM",
+   "nombre": "Humedad",
+   "descripcion": "Filtraciones, moho y condensación"
+  },
+  {
+   "codigo": "GAS",
+   "nombre": "Gas",
+   "descripcion": "Fugas y fallas en la red de gas domiciliario"
+  },
+  {
+   "codigo": "CTE",
+   "nombre": "Confort térmico",
+   "descripcion": "Aislamiento térmico de la vivienda"
+  },
+  {
+   "codigo": "CAC",
+   "nombre": "Confort acústico",
+   "descripcion": "Aislamiento acústico de la vivienda"
+  }
+ ],
+ "preguntas": [
+  {
+   "codigo": "olor_quemado",
+   "categoria": "ELE",
+   "texto_pregunta": "¿Olor a quemado en tomas o tablero?",
+   "enunciado_positivo": "hay olor a quemado en tomas o en el tablero eléctrico",
+   "enunciado_negativo": "no hay olor a quemado en tomas ni en el tablero eléctrico"
+  },
+  {
+   "codigo": "sobrecalentamiento",
+   "categoria": "ELE",
+   "texto_pregunta": "¿Enchufes o interruptores sobrecalentados?",
+   "enunciado_positivo": "hay sobrecalentamiento de enchufes o interruptores",
+   "enunciado_negativo": "no hay sobrecalentamiento de enchufes ni interruptores"
+  },
+  {
+   "codigo": "breaker",
+   "categoria": "ELE",
+   "texto_pregunta": "¿El breaker se dispara con frecuencia?",
+   "enunciado_positivo": "el disyuntor (breaker) se dispara con frecuencia",
+   "enunciado_negativo": "el disyuntor (breaker) no se dispara con frecuencia"
+  },
+  {
+   "codigo": "chispas",
+   "categoria": "ELE",
+   "texto_pregunta": "¿Chispas al conectar un electrodoméstico?",
+   "enunciado_positivo": "se presentan chispas al conectar o desconectar un electrodoméstico",
+   "enunciado_negativo": "no se presentan chispas al conectar o desconectar un electrodoméstico"
+  },
+  {
+   "codigo": "cables",
+   "categoria": "ELE",
+   "texto_pregunta": "¿Cables expuestos o deteriorados?",
+   "enunciado_positivo": "hay cables visiblemente expuestos o deteriorados",
+   "enunciado_negativo": "no hay cables expuestos ni deteriorados"
+  },
+  {
+   "codigo": "cortos",
+   "categoria": "ELE",
+   "texto_pregunta": "¿Cortocircuitos frecuentes?",
+   "enunciado_positivo": "se presentan cortocircuitos frecuentes",
+   "enunciado_negativo": "no se presentan cortocircuitos frecuentes"
+  },
+  {
+   "codigo": "parpadeo",
+   "categoria": "ELE",
+   "texto_pregunta": "¿Parpadeo constante de las luces?",
+   "enunciado_positivo": "hay parpadeo constante de las luces",
+   "enunciado_negativo": "no hay parpadeo constante de las luces"
+  },
+  {
+   "codigo": "tomas",
+   "categoria": "ELE",
+   "texto_pregunta": "¿Tomas que dejan de funcionar?",
+   "enunciado_positivo": "hay tomas de corriente que dejan de funcionar",
+   "enunciado_negativo": "no hay tomas de corriente que hayan dejado de funcionar"
+  },
+  {
+   "codigo": "fuga_visible",
+   "categoria": "HID",
+   "texto_pregunta": "¿Fuga visible en tuberías?",
+   "enunciado_positivo": "hay fuga visible en tuberías o conexiones",
+   "enunciado_negativo": "no hay fuga visible en tuberías ni conexiones"
+  },
+  {
+   "codigo": "humedad_lavamanos",
+   "categoria": "HID",
+   "texto_pregunta": "¿Humedad bajo el lavamanos?",
+   "enunciado_positivo": "hay manchas de humedad bajo el lavamanos o el fregadero",
+   "enunciado_negativo": "no hay manchas de humedad bajo el lavamanos ni el fregadero"
+  },
+  {
+   "codigo": "agua_color",
+   "categoria": "HID",
+   "texto_pregunta": "¿Agua con color o turbidez?",
+   "enunciado_positivo": "el agua sale con color, olor o turbidez inusual",
+   "enunciado_negativo": "el agua no presenta color, olor ni turbidez inusual"
+  },
+  {
+   "codigo": "mal_olor_desague",
+   "categoria": "HID",
+   "texto_pregunta": "¿Mal olor en los desagües?",
+   "enunciado_positivo": "hay mal olor proveniente de los desagües",
+   "enunciado_negativo": "no hay mal olor proveniente de los desagües"
+  },
+  {
+   "codigo": "obstruccion",
+   "categoria": "HID",
+   "texto_pregunta": "¿Desagües obstruidos o lentos?",
+   "enunciado_positivo": "hay obstrucción o lentitud en los desagües",
+   "enunciado_negativo": "no hay obstrucción ni lentitud en los desagües"
+  },
+  {
+   "codigo": "baja_presion",
+   "categoria": "HID",
+   "texto_pregunta": "¿Baja presión de agua?",
+   "enunciado_positivo": "hay baja presión de agua en uno o varios puntos",
+   "enunciado_negativo": "no hay baja presión de agua"
+  },
+  {
+   "codigo": "golpeteo",
+   "categoria": "HID",
+   "texto_pregunta": "¿Golpeteo en las tuberías?",
+   "enunciado_positivo": "hay ruidos (golpeteo) en las tuberías al abrir o cerrar llaves",
+   "enunciado_negativo": "no hay ruidos ni golpeteo en las tuberías"
+  },
+  {
+   "codigo": "goteo",
+   "categoria": "HID",
+   "texto_pregunta": "¿Goteo constante en grifos?",
+   "enunciado_positivo": "hay goteo constante en grifos o llaves de paso",
+   "enunciado_negativo": "no hay goteo en grifos ni llaves de paso"
+  },
+  {
+   "codigo": "hundimiento",
+   "categoria": "EST",
+   "texto_pregunta": "¿Hundimiento o desnivel en el piso?",
+   "enunciado_positivo": "hay hundimiento o desnivel perceptible en el piso",
+   "enunciado_negativo": "no hay hundimiento ni desnivel perceptible en el piso"
+  },
+  {
+   "codigo": "inclinacion",
+   "categoria": "EST",
+   "texto_pregunta": "¿Inclinación en muros o columnas?",
+   "enunciado_positivo": "hay inclinación visible en muros o columnas",
+   "enunciado_negativo": "no hay inclinación visible en muros ni columnas"
+  },
+  {
+   "codigo": "grietas_diagonales",
+   "categoria": "EST",
+   "texto_pregunta": "¿Grietas diagonales en paredes?",
+   "enunciado_positivo": "hay grietas diagonales en paredes",
+   "enunciado_negativo": "no hay grietas diagonales en paredes"
+  },
+  {
+   "codigo": "puertas",
+   "categoria": "EST",
+   "texto_pregunta": "¿Puertas o ventanas que no cierran?",
+   "enunciado_positivo": "hay puertas o ventanas que dejan de cerrar correctamente",
+   "enunciado_negativo": "las puertas y ventanas cierran correctamente"
+  },
+  {
+   "codigo": "grietas_vh",
+   "categoria": "EST",
+   "texto_pregunta": "¿Grietas verticales u horizontales?",
+   "enunciado_positivo": "hay grietas verticales u horizontales en paredes",
+   "enunciado_negativo": "no hay grietas verticales ni horizontales en paredes"
+  },
+  {
+   "codigo": "humedad_ascendente",
+   "categoria": "EST",
+   "texto_pregunta": "¿Humedad ascendente en muros?",
+   "enunciado_positivo": "hay humedad ascendente en la base de los muros o cimientos",
+   "enunciado_negativo": "no hay humedad ascendente en la base de los muros ni cimientos"
+  },
+  {
+   "codigo": "fisuras_techo",
+   "categoria": "EST",
+   "texto_pregunta": "¿Fisuras finas en el techo?",
+   "enunciado_positivo": "hay grietas o fisuras finas visibles en el techo o placa",
+   "enunciado_negativo": "no hay grietas ni fisuras visibles en el techo ni la placa"
+  },
+  {
+   "codigo": "panete",
+   "categoria": "EST",
+   "texto_pregunta": "¿Desprendimiento de pañete?",
+   "enunciado_positivo": "hay desprendimiento de revoque, pañete o recubrimiento",
+   "enunciado_negativo": "no hay desprendimiento de revoque, pañete ni recubrimiento"
+  },
+  {
+   "codigo": "manchas",
+   "categoria": "HUM",
+   "texto_pregunta": "¿Manchas de humedad en techo o pared?",
+   "enunciado_positivo": "hay manchas de humedad en techos o paredes",
+   "enunciado_negativo": "no hay manchas de humedad en techos ni paredes"
+  },
+  {
+   "codigo": "moho",
+   "categoria": "HUM",
+   "texto_pregunta": "¿Moho u hongos visibles?",
+   "enunciado_positivo": "hay presencia visible de moho u hongos",
+   "enunciado_negativo": "no hay presencia visible de moho ni hongos"
+  },
+  {
+   "codigo": "pintura",
+   "categoria": "HUM",
+   "texto_pregunta": "¿Pintura descascarada o ampollada?",
+   "enunciado_positivo": "hay pintura descascarada, ampollada o desprendida",
+   "enunciado_negativo": "no hay pintura descascarada, ampollada ni desprendida"
+  },
+  {
+   "codigo": "olor_humedad",
+   "categoria": "HUM",
+   "texto_pregunta": "¿Olor persistente a humedad?",
+   "enunciado_positivo": "hay olor persistente a humedad o encierro",
+   "enunciado_negativo": "no hay olor persistente a humedad ni encierro"
+  },
+  {
+   "codigo": "condensacion",
+   "categoria": "HUM",
+   "texto_pregunta": "¿Condensación en ventanas?",
+   "enunciado_positivo": "hay condensación recurrente en ventanas o superficies frías",
+   "enunciado_negativo": "no hay condensación recurrente en ventanas ni superficies frías"
+  },
+  {
+   "codigo": "olor_gas",
+   "categoria": "GAS",
+   "texto_pregunta": "¿Olor característico a gas?",
+   "enunciado_positivo": "hay olor característico a gas dentro de la vivienda",
+   "enunciado_negativo": "no hay olor característico a gas dentro de la vivienda"
+  },
+  {
+   "codigo": "silbido",
+   "categoria": "GAS",
+   "texto_pregunta": "¿Silbido en tuberías de gas?",
+   "enunciado_positivo": "hay silbido audible cerca de tuberías o conexiones de gas",
+   "enunciado_negativo": "no hay silbido audible cerca de tuberías ni conexiones de gas"
+  },
+  {
+   "codigo": "consumo_gas",
+   "categoria": "GAS",
+   "texto_pregunta": "¿Consumo de gas inusualmente alto?",
+   "enunciado_positivo": "hay un aumento inusual en el consumo de gas sin justificación aparente",
+   "enunciado_negativo": "no hay un aumento inusual en el consumo de gas"
+  },
+  {
+   "codigo": "llama_amarilla",
+   "categoria": "GAS",
+   "texto_pregunta": "¿Llama amarilla o naranja?",
+   "enunciado_positivo": "la llama de la estufa es de color amarillo o naranja en lugar de azul",
+   "enunciado_negativo": "la llama de la estufa es azul"
+  },
+  {
+   "codigo": "corrientes_aire",
+   "categoria": "CTE",
+   "texto_pregunta": "¿Corrientes de aire en ventanas o puertas?",
+   "enunciado_positivo": "hay corrientes de aire perceptibles alrededor de ventanas o puertas",
+   "enunciado_negativo": "no hay corrientes de aire perceptibles alrededor de ventanas ni puertas"
+  },
+  {
+   "codigo": "diferencia_temp",
+   "categoria": "CTE",
+   "texto_pregunta": "¿Diferencias de temperatura entre habitaciones?",
+   "enunciado_positivo": "hay diferencias notorias de temperatura entre habitaciones",
+   "enunciado_negativo": "no hay diferencias notorias de temperatura entre habitaciones"
+  },
+  {
+   "codigo": "ruido_exterior",
+   "categoria": "CAC",
+   "texto_pregunta": "¿Ruido exterior excesivo?",
+   "enunciado_positivo": "hay ingreso excesivo de ruido exterior",
+   "enunciado_negativo": "no hay ingreso excesivo de ruido exterior"
+  }
+ ],
+ "hipotesis": [
+  {
+   "codigo": "C01",
+   "categoria": "CTE",
+   "diagnostico": "Sellado deficiente de marcos",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 70,
+   "especialista": "Técnico en carpintería / sellado",
+   "accion_recomendada": "Usar burletes temporales en los marcos y evaluar el sellado profesional de ventanas y puertas.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "C02",
+   "categoria": "CTE",
+   "diagnostico": "Aislamiento térmico insuficiente",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 65,
+   "especialista": "Especialista en aislamiento",
+   "accion_recomendada": "Identificar las zonas con mayor pérdida térmica y considerar mejorar el aislamiento en esos puntos.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "C03",
+   "categoria": "CAC",
+   "diagnostico": "Aislamiento acústico insuficiente",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 65,
+   "especialista": "Especialista en acústica",
+   "accion_recomendada": "Evaluar el sellado de ventanas y considerar materiales de aislamiento acústico en la zona más expuesta.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "E01",
+   "categoria": "ELE",
+   "diagnostico": "Sobrecarga del circuito o falla en el tablero",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 88,
+   "especialista": "Electricista certificado",
+   "accion_recomendada": "Bajar el breaker de la zona afectada y no volver a usarla hasta la revisión de un electricista.",
+   "validada": 1,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E02",
+   "categoria": "ELE",
+   "diagnostico": "Riesgo de cortocircuito",
+   "nivel_urgencia": "Critica",
+   "factor_certeza": 92,
+   "especialista": "Electricista (atención urgente)",
+   "accion_recomendada": "Desconectar el electrodoméstico afectado y no usar esa toma ni los cables expuestos hasta la revisión.",
+   "validada": 1,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E03",
+   "categoria": "ELE",
+   "diagnostico": "Fluctuación de voltaje o falla de conexión",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 72,
+   "especialista": "Electricista",
+   "accion_recomendada": "Evitar conectar electrodomésticos sensibles hasta confirmar la causa de la fluctuación.",
+   "validada": 1,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E04",
+   "categoria": "ELE",
+   "diagnostico": "Fallo puntual en toma de corriente",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 75,
+   "especialista": "Electricista (revisión programada)",
+   "accion_recomendada": "Probar la toma con otro electrodoméstico y, si el problema persiste, programar una revisión de rutina.",
+   "validada": 1,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E05",
+   "categoria": "ELE",
+   "diagnostico": "Riesgo de incendio eléctrico",
+   "nivel_urgencia": "Critica",
+   "factor_certeza": 93,
+   "especialista": "Electricista (atención urgente)",
+   "accion_recomendada": "Bajar el breaker de inmediato, no volver a energizar la zona y llamar a un electricista con carácter urgente.",
+   "validada": 1,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E06",
+   "categoria": "ELE",
+   "diagnostico": "Corto en la instalación",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 85,
+   "especialista": "Electricista",
+   "accion_recomendada": "Evitar reactivar el breaker repetidamente y solicitar revisión de la instalación antes de seguir usando el circuito.",
+   "validada": 1,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E07",
+   "categoria": "ELE",
+   "diagnostico": "Deterioro de la instalación eléctrica",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 78,
+   "especialista": "Electricista",
+   "accion_recomendada": "Evitar el contacto con los cables expuestos y aislar temporalmente la zona mientras se programa la reparación.",
+   "validada": 1,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E08",
+   "categoria": "ELE",
+   "diagnostico": "Conexión floja o punto caliente en toma o tablero",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 76,
+   "especialista": "Electricista",
+   "accion_recomendada": "Desconectar los equipos de la toma afectada, bajar el breaker de la zona si el olor persiste y solicitar revisión.",
+   "validada": 1,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E09",
+   "categoria": "ELE",
+   "diagnostico": "Desgaste de contactos en la toma o la clavija",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 78,
+   "especialista": "Electricista",
+   "accion_recomendada": "No volver a usar la toma ni el enchufe que produjo la chispa hasta que sean revisados.",
+   "validada": 0,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E10",
+   "categoria": "ELE",
+   "diagnostico": "Protección del circuito deficiente",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 70,
+   "especialista": "Electricista certificado",
+   "accion_recomendada": "Limitar el uso del circuito afectado y solicitar la revisión del tablero y de sus protecciones.",
+   "validada": 0,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E11",
+   "categoria": "ELE",
+   "diagnostico": "Sobrecarga por uso simultáneo de equipos",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 72,
+   "especialista": "Electricista",
+   "accion_recomendada": "Repartir los equipos de alto consumo entre distintos circuitos y evitar usarlos al mismo tiempo hasta la revisión.",
+   "validada": 0,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "E12",
+   "categoria": "ELE",
+   "diagnostico": "Conexión deficiente o sobrecarga en enchufe o interruptor",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 77,
+   "especialista": "Electricista",
+   "accion_recomendada": "Desconectar los equipos del punto sobrecalentado y no volver a usarlo hasta que sea revisado.",
+   "validada": 0,
+   "fuente": "Entrevista 1 - Electricista residencial"
+  },
+  {
+   "codigo": "G01",
+   "categoria": "GAS",
+   "diagnostico": "Fuga activa de gas",
+   "nivel_urgencia": "Critica",
+   "factor_certeza": 95,
+   "especialista": "Empresa de gas (atención urgente)",
+   "accion_recomendada": "Ventilar de inmediato, no accionar interruptores ni encender llamas, y llamar a la empresa de gas desde afuera.",
+   "validada": 1,
+   "fuente": "Entrevista 4 - Técnico en gas domiciliario"
+  },
+  {
+   "codigo": "G02",
+   "categoria": "GAS",
+   "diagnostico": "Combustión incompleta o quemador desajustado",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 78,
+   "especialista": "Técnico de gas",
+   "accion_recomendada": "Apagar la estufa y no usarla hasta que un técnico de gas revise y ajuste el quemador.",
+   "validada": 1,
+   "fuente": "Entrevista 4 - Técnico en gas domiciliario"
+  },
+  {
+   "codigo": "G03",
+   "categoria": "GAS",
+   "diagnostico": "Posible fuga menor no perceptible",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 74,
+   "especialista": "Técnico de gas",
+   "accion_recomendada": "Revisar visualmente las conexiones y solicitar una revisión técnica próxima, aunque no haya olor perceptible.",
+   "validada": 1,
+   "fuente": "Entrevista 4 - Técnico en gas domiciliario"
+  },
+  {
+   "codigo": "G04",
+   "categoria": "GAS",
+   "diagnostico": "Fuga leve de gas",
+   "nivel_urgencia": "Critica",
+   "factor_certeza": 82,
+   "especialista": "Empresa de gas (atención urgente)",
+   "accion_recomendada": "Ventilar de inmediato, no accionar interruptores ni encender llamas, cerrar la llave de paso del gas y llamar a la empresa de gas desde afuera.",
+   "validada": 1,
+   "fuente": "Entrevista 4 - Técnico en gas domiciliario"
+  },
+  {
+   "codigo": "G05",
+   "categoria": "GAS",
+   "diagnostico": "Fuga en conexión no detectada por el olfato",
+   "nivel_urgencia": "Critica",
+   "factor_certeza": 88,
+   "especialista": "Empresa de gas (atención urgente)",
+   "accion_recomendada": "Ventilar de inmediato y contactar a la empresa de gas con carácter urgente, aunque no se perciba olor.",
+   "validada": 1,
+   "fuente": "Entrevista 4 - Técnico en gas domiciliario"
+  },
+  {
+   "codigo": "G06",
+   "categoria": "GAS",
+   "diagnostico": "Posible fuga en conexión de gas",
+   "nivel_urgencia": "Critica",
+   "factor_certeza": 80,
+   "especialista": "Empresa de gas (atención urgente)",
+   "accion_recomendada": "Cerrar la llave de paso del gas, ventilar la vivienda y contactar a la empresa de gas, aunque no se perciba olor.",
+   "validada": 0,
+   "fuente": "Entrevista 4 - Técnico en gas domiciliario"
+  },
+  {
+   "codigo": "H01",
+   "categoria": "HID",
+   "diagnostico": "Fuga activa en tubería de suministro",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 90,
+   "especialista": "Plomero",
+   "accion_recomendada": "Cerrar la llave de paso de esa zona para detener la fuga mientras llega el plomero.",
+   "validada": 1,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H02",
+   "categoria": "HID",
+   "diagnostico": "Obstrucción parcial o sedimentación",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 68,
+   "especialista": "Plomero",
+   "accion_recomendada": "Evitar el uso simultáneo de varias salidas de agua mientras se programa la revisión.",
+   "validada": 1,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H03",
+   "categoria": "HID",
+   "diagnostico": "Golpe de ariete o aire atrapado",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 70,
+   "especialista": "Plomero",
+   "accion_recomendada": "Cerrar las llaves de forma gradual mientras se programa la revisión; no representa una urgencia.",
+   "validada": 1,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H04",
+   "categoria": "HID",
+   "diagnostico": "Taponamiento en la red de desagüe",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 82,
+   "especialista": "Plomero",
+   "accion_recomendada": "Evitar verter más agua o residuos por ese desagüe hasta destaparlo o hacerlo revisar.",
+   "validada": 1,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H05",
+   "categoria": "HID",
+   "diagnostico": "Empaque o válvula desgastada",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 74,
+   "especialista": "Plomero",
+   "accion_recomendada": "Cerrar bien la llave tras cada uso y programar el cambio del empaque; no es urgente.",
+   "validada": 1,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H06",
+   "categoria": "HID",
+   "diagnostico": "Contaminación o corrosión en la tubería",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 80,
+   "especialista": "Plomero / empresa de acueducto",
+   "accion_recomendada": "Suspender el consumo de esa agua para bebida o cocina hasta que sea evaluada.",
+   "validada": 1,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H07",
+   "categoria": "HID",
+   "diagnostico": "Fuga oculta en conexión de desagüe",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 76,
+   "especialista": "Plomero",
+   "accion_recomendada": "Revisar la conexión bajo el mueble y evitar el uso intensivo de esa salida hasta la revisión.",
+   "validada": 1,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H08",
+   "categoria": "HID",
+   "diagnostico": "Fuga localizada en conexión o accesorio",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 80,
+   "especialista": "Plomero",
+   "accion_recomendada": "Cerrar la llave de paso de la zona y colocar un recipiente bajo la fuga mientras llega el plomero.",
+   "validada": 0,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H09",
+   "categoria": "HID",
+   "diagnostico": "Filtración en conexión de suministro bajo el mueble",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 70,
+   "especialista": "Plomero",
+   "accion_recomendada": "Secar la zona, revisar las mangueras de abasto y vigilar si la mancha crece.",
+   "validada": 0,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H10",
+   "categoria": "HID",
+   "diagnostico": "Obstrucción localizada en sifón o desagüe",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 75,
+   "especialista": "Plomero",
+   "accion_recomendada": "Limpiar el sifón o usar un destapador manual, sin mezclar productos químicos; si persiste, llamar al plomero.",
+   "validada": 0,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "H11",
+   "categoria": "HID",
+   "diagnostico": "Sifón seco o ventilación deficiente del desagüe",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 72,
+   "especialista": "Plomero",
+   "accion_recomendada": "Dejar correr agua en los desagües poco usados para restablecer el sello del sifón; si el olor persiste, solicitar revisión.",
+   "validada": 0,
+   "fuente": "Entrevista 2 - Técnico en fontanería"
+  },
+  {
+   "codigo": "M01",
+   "categoria": "HUM",
+   "diagnostico": "Filtración activa desde la cubierta",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 83,
+   "especialista": "Impermeabilizador / ingeniero civil",
+   "accion_recomendada": "Proteger los objetos bajo la zona afectada y contactar a un impermeabilizador con prontitud.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "M02",
+   "categoria": "HUM",
+   "diagnostico": "Humedad acumulada bajo el recubrimiento",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 75,
+   "especialista": "Impermeabilizador",
+   "accion_recomendada": "Ventilar el espacio y evitar sellar la zona con pintura nueva hasta resolver la humedad de fondo.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "M03",
+   "categoria": "HUM",
+   "diagnostico": "Ventilación insuficiente o puente térmico",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 68,
+   "especialista": "Revisión de ventilación",
+   "accion_recomendada": "Ventilar el espacio con regularidad y secar la condensación para evitar la aparición de moho.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "M04",
+   "categoria": "HUM",
+   "diagnostico": "Humedad ambiental elevada",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 71,
+   "especialista": "Revisión de ventilación / impermeabilizador",
+   "accion_recomendada": "Mejorar la ventilación de la zona y limpiar el moho visible con los productos adecuados.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "M05",
+   "categoria": "HUM",
+   "diagnostico": "Filtración incipiente o fuga en tubería empotrada",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 74,
+   "especialista": "Plomero / impermeabilizador",
+   "accion_recomendada": "Delimitar la mancha con lápiz y observar si crece; verificar si coincide con tuberías o con días de lluvia.",
+   "validada": 0,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "M06",
+   "categoria": "HUM",
+   "diagnostico": "Deterioro del acabado por humedad residual",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 65,
+   "especialista": "Maestro de obra / pintor",
+   "accion_recomendada": "Raspar la pintura suelta, dejar secar el muro y aplicar un sellador antes de volver a pintar.",
+   "validada": 0,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "M07",
+   "categoria": "HUM",
+   "diagnostico": "Humedad oculta o ventilación insuficiente",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 66,
+   "especialista": "Revisión de ventilación",
+   "accion_recomendada": "Ventilar el espacio a diario y revisar zonas cerradas (clósets, detrás de muebles) en busca de humedad.",
+   "validada": 0,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S01",
+   "categoria": "EST",
+   "diagnostico": "Asentamiento diferencial de la estructura",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 85,
+   "especialista": "Ingeniero civil",
+   "accion_recomendada": "Evitar sobrecargar la zona afectada y contactar a un ingeniero civil para una evaluación estructural pronta.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S02",
+   "categoria": "EST",
+   "diagnostico": "Fisuras superficiales por contracción",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 70,
+   "especialista": "Maestro de obra",
+   "accion_recomendada": "Monitorear la fisura periódicamente; no requiere atención inmediata si no crece ni se acompaña de otros síntomas.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S03",
+   "categoria": "EST",
+   "diagnostico": "Riesgo de falla en la cimentación",
+   "nivel_urgencia": "Critica",
+   "factor_certeza": 92,
+   "especialista": "Ingeniero civil (atención urgente)",
+   "accion_recomendada": "Restringir el acceso a la zona afectada y contactar de inmediato a un ingeniero civil.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S04",
+   "categoria": "EST",
+   "diagnostico": "Humedad capilar en cimientos",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 73,
+   "especialista": "Ingeniero civil / impermeabilizador",
+   "accion_recomendada": "Evitar revestir la zona húmeda hasta aplicar una solución de impermeabilización.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S05",
+   "categoria": "EST",
+   "diagnostico": "Deterioro superficial del recubrimiento",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 72,
+   "especialista": "Maestro de obra",
+   "accion_recomendada": "Retirar el material suelto para evitar caídas y programar el resane; no representa riesgo estructural.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S06",
+   "categoria": "EST",
+   "diagnostico": "Desplome estructural incipiente",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 80,
+   "especialista": "Ingeniero civil",
+   "accion_recomendada": "Evitar permanecer cerca del muro inclinado y solicitar una evaluación estructural con prontitud.",
+   "validada": 1,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S07",
+   "categoria": "EST",
+   "diagnostico": "Asentamiento del piso o falla del contrapiso",
+   "nivel_urgencia": "Alta",
+   "factor_certeza": 80,
+   "especialista": "Ingeniero civil",
+   "accion_recomendada": "Evitar ubicar cargas pesadas sobre la zona hundida y solicitar la evaluación de un ingeniero civil.",
+   "validada": 0,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S08",
+   "categoria": "EST",
+   "diagnostico": "Grietas por movimiento estructural localizado",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 74,
+   "especialista": "Ingeniero civil",
+   "accion_recomendada": "Marcar los extremos de la grieta con la fecha para vigilar si crece y programar una evaluación estructural.",
+   "validada": 0,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S09",
+   "categoria": "EST",
+   "diagnostico": "Fisuración de muros por retracción o cargas",
+   "nivel_urgencia": "Media",
+   "factor_certeza": 70,
+   "especialista": "Ingeniero civil",
+   "accion_recomendada": "Registrar con fotografías la ubicación y la longitud de la grieta, y solicitar una revisión si aumenta.",
+   "validada": 0,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  },
+  {
+   "codigo": "S10",
+   "categoria": "EST",
+   "diagnostico": "Desajuste de la carpintería de puertas o ventanas",
+   "nivel_urgencia": "Baja",
+   "factor_certeza": 68,
+   "especialista": "Técnico en carpintería",
+   "accion_recomendada": "Revisar bisagras y herrajes; si el problema aparece junto con grietas, repetir el diagnóstico estructural.",
+   "validada": 0,
+   "fuente": "Entrevista 3 - Ingeniero civil"
+  }
+ ],
+ "condiciones": [
+  {
+   "hipotesis": "C01",
+   "pregunta": "corrientes_aire",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "C02",
+   "pregunta": "corrientes_aire",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "C02",
+   "pregunta": "diferencia_temp",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "C03",
+   "pregunta": "ruido_exterior",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E01",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E01",
+   "pregunta": "sobrecalentamiento",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E01",
+   "pregunta": "breaker",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E02",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E02",
+   "pregunta": "chispas",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E02",
+   "pregunta": "cables",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E03",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E03",
+   "pregunta": "chispas",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E03",
+   "pregunta": "cables",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E03",
+   "pregunta": "cortos",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "E03",
+   "pregunta": "sobrecalentamiento",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "E03",
+   "pregunta": "parpadeo",
+   "valor_respuesta": 1,
+   "orden": 6
+  },
+  {
+   "hipotesis": "E04",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E04",
+   "pregunta": "chispas",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E04",
+   "pregunta": "cables",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E04",
+   "pregunta": "cortos",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "E04",
+   "pregunta": "sobrecalentamiento",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "E04",
+   "pregunta": "parpadeo",
+   "valor_respuesta": 0,
+   "orden": 6
+  },
+  {
+   "hipotesis": "E04",
+   "pregunta": "breaker",
+   "valor_respuesta": 0,
+   "orden": 7
+  },
+  {
+   "hipotesis": "E04",
+   "pregunta": "tomas",
+   "valor_respuesta": 1,
+   "orden": 8
+  },
+  {
+   "hipotesis": "E05",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E05",
+   "pregunta": "sobrecalentamiento",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E06",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E06",
+   "pregunta": "chispas",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E06",
+   "pregunta": "cables",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E06",
+   "pregunta": "cortos",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "E06",
+   "pregunta": "breaker",
+   "valor_respuesta": 1,
+   "orden": 5
+  },
+  {
+   "hipotesis": "E07",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E07",
+   "pregunta": "chispas",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E07",
+   "pregunta": "cables",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E08",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E08",
+   "pregunta": "sobrecalentamiento",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E08",
+   "pregunta": "breaker",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E09",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E09",
+   "pregunta": "chispas",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E09",
+   "pregunta": "cables",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E10",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E10",
+   "pregunta": "chispas",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E10",
+   "pregunta": "cables",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E10",
+   "pregunta": "cortos",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "E10",
+   "pregunta": "breaker",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "E11",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E11",
+   "pregunta": "chispas",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E11",
+   "pregunta": "cables",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E11",
+   "pregunta": "cortos",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "E11",
+   "pregunta": "sobrecalentamiento",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "E11",
+   "pregunta": "parpadeo",
+   "valor_respuesta": 0,
+   "orden": 6
+  },
+  {
+   "hipotesis": "E11",
+   "pregunta": "breaker",
+   "valor_respuesta": 1,
+   "orden": 7
+  },
+  {
+   "hipotesis": "E12",
+   "pregunta": "olor_quemado",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "E12",
+   "pregunta": "chispas",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "E12",
+   "pregunta": "cables",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "E12",
+   "pregunta": "cortos",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "E12",
+   "pregunta": "sobrecalentamiento",
+   "valor_respuesta": 1,
+   "orden": 5
+  },
+  {
+   "hipotesis": "G01",
+   "pregunta": "olor_gas",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "G01",
+   "pregunta": "silbido",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "G02",
+   "pregunta": "olor_gas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "G02",
+   "pregunta": "silbido",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "G02",
+   "pregunta": "consumo_gas",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "G02",
+   "pregunta": "llama_amarilla",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "G03",
+   "pregunta": "olor_gas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "G03",
+   "pregunta": "silbido",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "G03",
+   "pregunta": "consumo_gas",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "G04",
+   "pregunta": "olor_gas",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "G04",
+   "pregunta": "silbido",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "G05",
+   "pregunta": "olor_gas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "G05",
+   "pregunta": "silbido",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "G05",
+   "pregunta": "consumo_gas",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "G06",
+   "pregunta": "olor_gas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "G06",
+   "pregunta": "silbido",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "G06",
+   "pregunta": "consumo_gas",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H01",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H01",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H02",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H02",
+   "pregunta": "agua_color",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H02",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H02",
+   "pregunta": "obstruccion",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "H02",
+   "pregunta": "baja_presion",
+   "valor_respuesta": 1,
+   "orden": 5
+  },
+  {
+   "hipotesis": "H03",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H03",
+   "pregunta": "agua_color",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H03",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H03",
+   "pregunta": "obstruccion",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "H03",
+   "pregunta": "baja_presion",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "H03",
+   "pregunta": "golpeteo",
+   "valor_respuesta": 1,
+   "orden": 6
+  },
+  {
+   "hipotesis": "H04",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H04",
+   "pregunta": "agua_color",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H04",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H04",
+   "pregunta": "obstruccion",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "H04",
+   "pregunta": "mal_olor_desague",
+   "valor_respuesta": 1,
+   "orden": 5
+  },
+  {
+   "hipotesis": "H05",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H05",
+   "pregunta": "agua_color",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H05",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H05",
+   "pregunta": "obstruccion",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "H05",
+   "pregunta": "baja_presion",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "H05",
+   "pregunta": "golpeteo",
+   "valor_respuesta": 0,
+   "orden": 6
+  },
+  {
+   "hipotesis": "H05",
+   "pregunta": "goteo",
+   "valor_respuesta": 1,
+   "orden": 7
+  },
+  {
+   "hipotesis": "H06",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H06",
+   "pregunta": "agua_color",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H07",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H07",
+   "pregunta": "agua_color",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H07",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H07",
+   "pregunta": "mal_olor_desague",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "H08",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H08",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H09",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H09",
+   "pregunta": "agua_color",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H09",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H09",
+   "pregunta": "mal_olor_desague",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "H10",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H10",
+   "pregunta": "agua_color",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H10",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H10",
+   "pregunta": "obstruccion",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "H10",
+   "pregunta": "mal_olor_desague",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "H11",
+   "pregunta": "fuga_visible",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "H11",
+   "pregunta": "agua_color",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "H11",
+   "pregunta": "humedad_lavamanos",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "H11",
+   "pregunta": "obstruccion",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "H11",
+   "pregunta": "baja_presion",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "H11",
+   "pregunta": "golpeteo",
+   "valor_respuesta": 0,
+   "orden": 6
+  },
+  {
+   "hipotesis": "H11",
+   "pregunta": "goteo",
+   "valor_respuesta": 0,
+   "orden": 7
+  },
+  {
+   "hipotesis": "H11",
+   "pregunta": "mal_olor_desague",
+   "valor_respuesta": 1,
+   "orden": 8
+  },
+  {
+   "hipotesis": "M01",
+   "pregunta": "manchas",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "M01",
+   "pregunta": "moho",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "M02",
+   "pregunta": "manchas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "M02",
+   "pregunta": "moho",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "M02",
+   "pregunta": "pintura",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "M02",
+   "pregunta": "olor_humedad",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "M03",
+   "pregunta": "manchas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "M03",
+   "pregunta": "moho",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "M03",
+   "pregunta": "pintura",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "M03",
+   "pregunta": "condensacion",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "M04",
+   "pregunta": "manchas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "M04",
+   "pregunta": "moho",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "M05",
+   "pregunta": "manchas",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "M05",
+   "pregunta": "moho",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "M06",
+   "pregunta": "manchas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "M06",
+   "pregunta": "moho",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "M06",
+   "pregunta": "pintura",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "M06",
+   "pregunta": "olor_humedad",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "M07",
+   "pregunta": "manchas",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "M07",
+   "pregunta": "moho",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "M07",
+   "pregunta": "pintura",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "M07",
+   "pregunta": "condensacion",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "M07",
+   "pregunta": "olor_humedad",
+   "valor_respuesta": 1,
+   "orden": 5
+  },
+  {
+   "hipotesis": "S01",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S01",
+   "pregunta": "grietas_diagonales",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S01",
+   "pregunta": "puertas",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "S02",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S02",
+   "pregunta": "grietas_diagonales",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S02",
+   "pregunta": "inclinacion",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "S02",
+   "pregunta": "grietas_vh",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "S02",
+   "pregunta": "humedad_ascendente",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "S02",
+   "pregunta": "fisuras_techo",
+   "valor_respuesta": 1,
+   "orden": 6
+  },
+  {
+   "hipotesis": "S03",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S03",
+   "pregunta": "inclinacion",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S04",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S04",
+   "pregunta": "grietas_diagonales",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S04",
+   "pregunta": "inclinacion",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "S04",
+   "pregunta": "grietas_vh",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "S04",
+   "pregunta": "humedad_ascendente",
+   "valor_respuesta": 1,
+   "orden": 5
+  },
+  {
+   "hipotesis": "S05",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S05",
+   "pregunta": "grietas_diagonales",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S05",
+   "pregunta": "inclinacion",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "S05",
+   "pregunta": "grietas_vh",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "S05",
+   "pregunta": "humedad_ascendente",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "S05",
+   "pregunta": "fisuras_techo",
+   "valor_respuesta": 0,
+   "orden": 6
+  },
+  {
+   "hipotesis": "S05",
+   "pregunta": "panete",
+   "valor_respuesta": 1,
+   "orden": 7
+  },
+  {
+   "hipotesis": "S06",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S06",
+   "pregunta": "grietas_diagonales",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S06",
+   "pregunta": "inclinacion",
+   "valor_respuesta": 1,
+   "orden": 3
+  },
+  {
+   "hipotesis": "S07",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 1,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S07",
+   "pregunta": "inclinacion",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S08",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S08",
+   "pregunta": "grietas_diagonales",
+   "valor_respuesta": 1,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S08",
+   "pregunta": "puertas",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "S09",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S09",
+   "pregunta": "grietas_diagonales",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S09",
+   "pregunta": "inclinacion",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "S09",
+   "pregunta": "grietas_vh",
+   "valor_respuesta": 1,
+   "orden": 4
+  },
+  {
+   "hipotesis": "S10",
+   "pregunta": "hundimiento",
+   "valor_respuesta": 0,
+   "orden": 1
+  },
+  {
+   "hipotesis": "S10",
+   "pregunta": "grietas_diagonales",
+   "valor_respuesta": 0,
+   "orden": 2
+  },
+  {
+   "hipotesis": "S10",
+   "pregunta": "inclinacion",
+   "valor_respuesta": 0,
+   "orden": 3
+  },
+  {
+   "hipotesis": "S10",
+   "pregunta": "grietas_vh",
+   "valor_respuesta": 0,
+   "orden": 4
+  },
+  {
+   "hipotesis": "S10",
+   "pregunta": "humedad_ascendente",
+   "valor_respuesta": 0,
+   "orden": 5
+  },
+  {
+   "hipotesis": "S10",
+   "pregunta": "fisuras_techo",
+   "valor_respuesta": 0,
+   "orden": 6
+  },
+  {
+   "hipotesis": "S10",
+   "pregunta": "panete",
+   "valor_respuesta": 0,
+   "orden": 7
+  },
+  {
+   "hipotesis": "S10",
+   "pregunta": "puertas",
+   "valor_respuesta": 1,
+   "orden": 8
+  }
+ ],
+ "servidor": "MySQL 8.4.11",
+ "exportado": "2026-10-31T22:06:43",
+ "huella_sha256": "c23f19c441ba88d5c479985053f415f09e6a11de5a7ab9d09a72022538ad197d"
+}
