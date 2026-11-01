@@ -10,4 +10,4 @@ Dos sistemas con la **misma base de conocimiento** (7 categorías, 36 preguntas,
 | `POST /api/gemini/diagnostico` | Gemini (IA generativa de Google) con las mismas reglas |
 | `GET /api/categorias`, `GET /api/salud` | Consulta de categorías y estado |
 
-La interfaz web (`index.html`) consume el API. La clave de Gemini se define en Vercel como variable de entorno `GEMINI_CLAVE`.
+La interfaz web (`public/`) consume el API. La clave de Gemini se define en Vercel como variable de entorno `GEMINI_CLAVE`.

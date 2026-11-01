@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diagnóstico de vivienda · SE frente a IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="marca">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+      <div>
+        <h1>Diagnóstico de fallas en vivienda</h1>
+        <p>Sistema experto como servicio · Universidad Manuela Beltrán</p>
+      </div>
+    </div>
+    <div id="estado" class="estado" role="status">Conectando…</div>
+  </header>
+
+  <main>
+    <section class="tarjeta" aria-labelledby="t-modo">
+      <h2 id="t-modo">1. ¿Con qué sistema quiere diagnosticar?</h2>
+      <div class="modos" role="radiogroup" aria-label="Sistema">
+        <button class="modo" role="radio" aria-checked="true" data-modo="se">
+          <strong>Nuestro sistema experto</strong>
+          <span>Reglas + inferencia bayesiana. Explica cada paso con probabilidades.</span>
+        </button>
+        <button class="modo" role="radio" aria-checked="false" data-modo="gemini">
+          <strong>Gemini (IA generativa)</strong>
+          <span>Modelo de Google con las mismas 49 reglas como conocimiento.</span>
+        </button>
+        <button class="modo" role="radio" aria-checked="false" data-modo="ambos">
+          <strong>Comparar lado a lado</strong>
+          <span>La misma vivienda, los dos sistemas a la vez.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="tarjeta" aria-labelledby="t-cat">
+      <h2 id="t-cat">2. ¿Qué tipo de problema tiene?</h2>
+      <div id="categorias" class="categorias"></div>
+    </section>
+
+    <section id="sesiones" class="sesiones" aria-live="polite"></section>
+  </main>
+
+  <footer class="pie">
+    Proyecto de Sistemas Expertos · Lina María Briñez Rodríguez y Víctor Alfonso Alarcón Ospina · 2026.
+    Orientación inicial: no reemplaza la visita de un profesional.
+  </footer>
+
+  <template id="t-sesion">
+    <article class="tarjeta sesion">
+      <header class="sesion-cab">
+        <h2 class="sesion-titulo"></h2>
+        <span class="sesion-sub"></span>
+      </header>
+      <ol class="dadas"></ol>
+      <div class="zona"></div>
+      <p class="metricas"></p>
+    </article>
+  </template>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
